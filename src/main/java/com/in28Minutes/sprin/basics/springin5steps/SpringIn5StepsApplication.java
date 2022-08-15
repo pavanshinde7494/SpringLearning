@@ -45,3 +45,8 @@ public class SpringIn5StepsApplication {
 //	5.Finished creating shared instance of singleton bean 'bubbleSortAlgorithm'
 //	5.Autowiring by type from bean name 'binarySearchImpl' via constructor to bean named 'bubbleSortAlgorithm'
 //  6.Finished creating shared instance of singleton bean 'bubbleSortAlgorithm'
+
+// What if we have more than 1 matching dependencies ->
+// 		If Spring has 0 or more that 1 matching dependencies then Spring throws an error
+// 		In case of more than 1 matching dependencies conflict resolved by adding @Primary annotation
+// 		If We are getting above error the we should see correct combination of @Component @Autowire @Primary
